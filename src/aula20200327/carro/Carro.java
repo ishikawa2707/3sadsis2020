@@ -11,7 +11,7 @@ public class Carro {
 	
 	//+ Carro()
 	public Carro() {
-		//A inicialização dos atributos do objeto podem (ou devem!) ser feitos no construtor.
+		//A inicializaÃ§Ã£o dos atributos do objeto podem (ou devem!) ser feitos no construtor.
 		combustivelNoTanqueEmLitros = 0.00;
 		ligado = false;
 	}
@@ -53,7 +53,18 @@ public class Carro {
 		return combustivelNoTanqueEmLitros;
 	}
 
+	public void esvaziarTanqueDoCarro() {
+		if (combustivelNoTanqueEmLitros > 0.00) {
+			combustivelNoTanqueEmLitros = 0.00;
+		}else {
+			throw new RuntimeException("Tanque já está vazio");
+		}
+		
+	}
+
 }
+
+
 
 
 
