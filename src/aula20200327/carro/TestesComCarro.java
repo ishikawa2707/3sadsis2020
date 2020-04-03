@@ -74,4 +74,15 @@ class TestesComCarro {
 
 	}
 
+
+	@Test
+	void esvaziarTanqueDoCarro() {
+		Carro palioABC3333 = new Carro();
+		palioABC3333.abastecer(0.25);
+		
+		palioABC3333.esvaziarTanqueDoCarro();
+       
+		assertEquals(0, palioABC3333 .getCombustivelNoTanqueEmLitros());
+			
+	}
 }
