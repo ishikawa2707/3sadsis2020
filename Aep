@@ -1,0 +1,23 @@
+package Aep;
+
+public class TimeDeFutebol {
+
+	public static void main(String[] args) {
+		Time fcMaringa = new Time();
+
+		fcMaringa.setNome("fcMarimga");
+		fcMaringa.setAnoDeFundacao(1990);
+		fcMaringa.Mascote("Leão");
+		fcMaringa.setNomeEstadio("Willie Davids");
+		fcMaringa.setPatrocinio("LG");
+		fcMaringa.setQuantidadeDeJogadorNoTime(20);
+
+		Time fcSarandi = new Time("fcSarandi", 1992, "Coruja", "Julio Humberto Grondona", "Copel", 20);
+		Jogador Ivan = new Jogador("Ivan Ishikawa", 30);
+
+		System.out.println(fcMaringa);
+		System.out.println(fcSarandi);
+		System.out.println(Ivan);
+	}
+
+}
